@@ -3,8 +3,7 @@ class QuestionsController < ApplicationController
   end
 
   def answer
-    @question = params[:question]
-    
+    @question = params[:question] || "..."
 
     if @question.end_with? "?"
       @answer = "Silly question, get dressed and go to work!"
