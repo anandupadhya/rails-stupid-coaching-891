@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #082032;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ask {
+  min-width: 800px;
+  min-height: 400px;
+  padding: 2rem 0;
+  background-color: #334756;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  border-radius: 0.5rem;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-text {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #082032;
+  outline: none;
+}
+
+.btn-submit {
+  display: block;
+  color: whitesmoke;
+  border: none;
+  background-color: #F0A500;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  color: #082032;
+}
+
+
+
+.results {
+  min-width: 800px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #F0A500;
+  margin-bottom: 2em;
+}
+
+.card {
+  width: 80%;
+  background-color: #334756;
+  border-bottom: 5px solid #F0A500;
+  padding: 1em;
+  color: whitesmoke;
+  margin-bottom: 2em;
+  border-radius: 0.5rem
+}
+
+.card h2 {
+  font-weight: normal;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+
+.btn {
+  width: 80%;
+  color: whitesmoke;
+  border: none;
+  background-color: #F0A500;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #082032;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
